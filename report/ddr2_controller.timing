@@ -1,0 +1,77 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'ddr2_controller' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ddr2_controller
+Version: F-2011.09-SP2
+Date   : Fri Oct 14 15:38:22 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: XINIT/counter_reg[15]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: XINIT/rasbar_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  XINIT/counter_reg[15]/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  XINIT/counter_reg[15]/Q (DFFPOSX1)                      0.11       0.11 f
+  XINIT/U283/Y (INVX1)                                    0.04       0.14 r
+  XINIT/U189/Y (NOR3X1)                                   0.04       0.18 f
+  XINIT/U188/Y (NAND3X1)                                  0.03       0.22 r
+  XINIT/U16/Y (BUFX2)                                     0.03       0.25 r
+  XINIT/U292/Y (INVX1)                                    0.02       0.27 f
+  XINIT/U295/Y (AND2X1)                                   0.05       0.32 f
+  XINIT/U282/Y (AND2X1)                                   0.06       0.38 f
+  XINIT/U235/Y (AND2X1)                                   0.06       0.44 f
+  XINIT/U177/Y (NAND3X1)                                  0.03       0.47 r
+  XINIT/U223/Y (BUFX2)                                    0.04       0.52 r
+  XINIT/U167/Y (NAND3X1)                                  0.02       0.53 f
+  XINIT/U66/Y (BUFX2)                                     0.03       0.57 f
+  XINIT/U161/Y (AOI22X1)                                  0.04       0.60 r
+  XINIT/U13/Y (BUFX2)                                     0.03       0.64 r
+  XINIT/U76/Y (INVX1)                                     0.02       0.65 f
+  XINIT/U22/Y (OR2X1)                                     0.05       0.70 f
+  XINIT/U20/Y (OR2X1)                                     0.05       0.76 f
+  XINIT/U21/Y (INVX1)                                     0.02       0.77 r
+  XINIT/U153/Y (NAND3X1)                                  0.01       0.78 f
+  XINIT/U19/Y (BUFX2)                                     0.03       0.81 f
+  XINIT/U260/Y (INVX1)                                    0.01       0.82 r
+  XINIT/U123/Y (AND2X1)                                   0.03       0.85 r
+  XINIT/U125/Y (INVX1)                                    0.02       0.87 f
+  XINIT/U151/Y (OAI21X1)                                  0.06       0.93 r
+  XINIT/U249/Y (AND2X1)                                   0.05       0.98 r
+  XINIT/U250/Y (INVX1)                                    0.03       1.01 f
+  XINIT/U105/Y (NAND3X1)                                  0.04       1.05 r
+  XINIT/U45/Y (BUFX2)                                     0.03       1.08 r
+  XINIT/U26/Y (AND2X1)                                    0.04       1.12 r
+  XINIT/U27/Y (INVX1)                                     0.02       1.14 f
+  XINIT/rasbar_reg/D (DFFPOSX1)                           0.00       1.14 f
+  data arrival time                                                  1.14
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  XINIT/rasbar_reg/CLK (DFFPOSX1)                         0.00       2.00 r
+  library setup time                                     -0.06       1.94
+  data required time                                                 1.94
+  --------------------------------------------------------------------------
+  data required time                                                 1.94
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.80
+
+
+1

@@ -1,0 +1,25 @@
+Loading db file '/usr/local/synopsys/2011.09/libraries/syn/gtech.db'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Loading verilog file '/home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v
+Warning:  /home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v:151: the undeclared symbol 'init_odt' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v:152: the undeclared symbol 'init_ts_con' assumed to have the default net type, which is 'wire'. (VER-936)
+
+Inferred memory devices in process
+	in routine ddr2_controller line 94 in file
+		'/home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      ck_i_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.db:ddr2_controller'
+Loaded 1 design.
+Current design is 'ddr2_controller'.
+ddr2_controller

@@ -1,0 +1,455 @@
+Running PRESTO HDLC
+Compiling source file ./design/SSTL18DDR2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./design/SSTL18DDR2DIFF.v
+Warning:  ./design/SSTL18DDR2DIFF.v:13: the undeclared symbol 'A_' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./design/SSTL18DDR2DIFF.v:16: the undeclared symbol 'PADN_' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./design/SSTL18DDR2INTERFACE.v
+Warning:  ./design/SSTL18DDR2INTERFACE.v:53: the undeclared symbol 'ck_o' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./design/SSTL18DDR2INTERFACE.v:55: the undeclared symbol 'cke_o' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./design/SSTL18DDR2INTERFACE.v:56: the undeclared symbol 'casbar_o' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./design/SSTL18DDR2INTERFACE.v:57: the undeclared symbol 'rasbar_o' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./design/SSTL18DDR2INTERFACE.v:58: the undeclared symbol 'csbar_o' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./design/SSTL18DDR2INTERFACE.v:60: the undeclared symbol 'webar_o' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./design/SSTL18DDR2INTERFACE.v:61: the undeclared symbol 'odt_o' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./design/FIFO.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./design/ddr2_init_engine.v
+Presto compilation completed successfully.
+Loading verilog file '/home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Warning: Overwriting design file '/home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller'. (DDB-24)
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v
+Warning:  /home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v:151: the undeclared symbol 'init_odt' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v:152: the undeclared symbol 'init_ts_con' assumed to have the default net type, which is 'wire'. (VER-936)
+
+Inferred memory devices in process
+	in routine ddr2_controller line 94 in file
+		'/home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      ck_i_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.db:ddr2_controller'
+Loaded 1 design.
+Current design is 'ddr2_controller'.
+Current design is 'ddr2_controller'.
+Information: Building the design 'FIFO' instantiated from design 'ddr2_controller' with
+	the parameters "DEPTH_P2=5,WIDTH=16". (HDL-193)
+Warning:  ./design/FIFO.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine FIFO_DEPTH_P25_WIDTH16 line 22 in file
+		'./design/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    fillcount_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+====================================================================
+|     block name/line       | Inputs | Outputs | # sel inputs | MB |
+====================================================================
+| FIFO_DEPTH_P25_WIDTH16/37 |   32   |   16    |      5       | N  |
+====================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FIFO' instantiated from design 'ddr2_controller' with
+	the parameters "DEPTH_P2=5,WIDTH=33". (HDL-193)
+Warning:  ./design/FIFO.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine FIFO_DEPTH_P25_WIDTH33 line 22 in file
+		'./design/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|    fillcount_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  33   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+====================================================================
+|     block name/line       | Inputs | Outputs | # sel inputs | MB |
+====================================================================
+| FIFO_DEPTH_P25_WIDTH33/37 |   32   |   33    |      5       | N  |
+====================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FIFO' instantiated from design 'ddr2_controller' with
+	the parameters "DEPTH_P2=5,WIDTH=41". (HDL-193)
+Warning:  ./design/FIFO.v:49: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine FIFO_DEPTH_P25_WIDTH41 line 22 in file
+		'./design/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      empty_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|    fillcount_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fifo_array_reg    | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+====================================================================
+|     block name/line       | Inputs | Outputs | # sel inputs | MB |
+====================================================================
+| FIFO_DEPTH_P25_WIDTH41/37 |   32   |   41    |      5       | N  |
+====================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ddr2_init_engine'. (HDL-193)
+
+Statistics for case statements in always block at line 76 in file
+	'./design/ddr2_init_engine.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           103            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ddr2_init_engine line 76 in file
+		'./design/ddr2_init_engine.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      csbar_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     rasbar_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      webar_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      ready_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |  17   |  Y  | N  | N  | N  | N  | N  | N  |
+|      RESET_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      INIT_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     casbar_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      flag_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       cke_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       odt_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        a_reg        | Flip-flop |   9   |  Y  | N  | N  | N  | N  | N  | N  |
+|        a_reg        | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|        a_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       ba_reg        | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     ts_con_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'SSTL18DDR2INTERFACE'. (HDL-193)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Presto compilation completed successfully.
+Information: Building the design 'SSTL18DDR2DIFF'. (HDL-193)
+
+Inferred tri-state devices in process
+	in routine SSTL18DDR2DIFF line 14 in file
+		'./design/SSTL18DDR2DIFF.v'.
+=================================================
+| Register Name |       Type       | Width | MB |
+=================================================
+|      b1       | Tri-State Buffer |   1   | N  |
+=================================================
+
+Inferred tri-state devices in process
+	in routine SSTL18DDR2DIFF line 15 in file
+		'./design/SSTL18DDR2DIFF.v'.
+=================================================
+| Register Name |       Type       | Width | MB |
+=================================================
+|      b2       | Tri-State Buffer |   1   | N  |
+=================================================
+Presto compilation completed successfully.
+Information: Building the design 'SSTL18DDR2'. (HDL-193)
+
+Inferred tri-state devices in process
+	in routine SSTL18DDR2 line 12 in file
+		'./design/SSTL18DDR2.v'.
+=================================================
+| Register Name |       Type       | Width | MB |
+=================================================
+|      b1       | Tri-State Buffer |   1   | N  |
+=================================================
+Presto compilation completed successfully.
+Information: Uniquified 43 instances of design 'SSTL18DDR2'. (OPT-1056)
+
+  Linking design 'ddr2_controller'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (50 designs)              /home/scf-31/kma567/EE577B/Project/DDR2/design/ddr2_controller.db, etc
+  gscl45nm (library)          /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db
+  dw_foundation.sldb (library) /usr/local/synopsys/2011.09/libraries/syn/dw_foundation.sldb
+
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | F-2011.09-DWBB_201109.2 |     *     |
+| Licensed DW Building Blocks        | F-2011.09-DWBB_201109.2 |     *     |
+============================================================================
+
+
+Information: There are 2943 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'SSTL18DDR2_0'
+  Processing 'SSTL18DDR2DIFF'
+  Processing 'SSTL18DDR2INTERFACE'
+  Processing 'ddr2_init_engine'
+Information: The register 'csbar_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'odt_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'a_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'a_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'a_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ts_con_reg' is a constant and will be removed. (OPT-1206)
+  Processing 'FIFO_DEPTH_P25_WIDTH41'
+  Processing 'FIFO_DEPTH_P25_WIDTH33'
+  Processing 'FIFO_DEPTH_P25_WIDTH16'
+  Processing 'ddr2_controller'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'ddr2_init_engine_DW01_inc_0'
+  Processing 'FIFO_DEPTH_P25_WIDTH41_DW01_dec_0'
+  Processing 'FIFO_DEPTH_P25_WIDTH41_DW01_inc_0'
+  Processing 'FIFO_DEPTH_P25_WIDTH41_DW01_inc_1'
+  Processing 'FIFO_DEPTH_P25_WIDTH41_DW01_inc_2'
+  Processing 'FIFO_DEPTH_P25_WIDTH33_DW01_dec_0'
+  Processing 'FIFO_DEPTH_P25_WIDTH33_DW01_inc_0'
+  Processing 'FIFO_DEPTH_P25_WIDTH33_DW01_inc_1'
+  Processing 'FIFO_DEPTH_P25_WIDTH33_DW01_inc_2'
+  Processing 'FIFO_DEPTH_P25_WIDTH16_DW01_dec_0'
+  Processing 'FIFO_DEPTH_P25_WIDTH16_DW01_inc_0'
+  Processing 'FIFO_DEPTH_P25_WIDTH16_DW01_inc_1'
+  Processing 'FIFO_DEPTH_P25_WIDTH16_DW01_inc_2'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09   51450.8      1.93       3.8      26.8                          
+    0:00:09   51450.8      1.93       3.8      26.8                          
+    0:00:12   56286.4      0.00       0.0       7.8                          
+    0:00:13   56286.4      0.00       0.0       7.8                          
+    0:00:13   56286.4      0.00       0.0       7.8                          
+    0:00:13   56286.4      0.00       0.0       7.8                          
+    0:00:13   56286.4      0.00       0.0       7.8                          
+    0:00:14   53203.6      0.00       0.0       6.7                          
+    0:00:14   53203.6      0.00       0.0       6.7                          
+    0:00:14   53203.6      0.00       0.0       6.7                          
+    0:00:14   53183.4      0.00       0.0       6.7                          
+    0:00:14   53183.4      0.00       0.0       6.7                          
+    0:00:16   53591.7      0.00       0.0       6.2                          
+    0:00:17   53993.9      0.00       0.0       5.7                          
+    0:00:17   54380.6      0.00       0.0       5.2                          
+    0:00:18   54780.0      0.00       0.0       4.8                          
+    0:00:19   55183.1      0.00       0.0       4.4                          
+    0:00:19   55545.4      0.00       0.0       4.0                          
+    0:00:20   55907.2      0.00       0.0       3.6                          
+    0:00:20   56263.4      0.00       0.0       3.2                          
+    0:00:21   56586.3      0.00       0.0       2.9                          
+    0:00:21   56907.3      0.00       0.0       2.6                          
+    0:00:22   57222.7      0.00       0.0       2.2                          
+    0:00:22   57538.1      0.00       0.0       1.9                          
+    0:00:23   57849.7      0.00       0.0       1.5                          
+    0:00:23   58161.3      0.00       0.0       1.2                          
+    0:00:23   58467.3      0.00       0.0       0.9                          
+    0:00:24   58773.3      0.00       0.0       0.6                          
+    0:00:24   58773.3      0.00       0.0       0.6                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:24   58773.3      0.00       0.0       0.6                          
+    0:00:24   58773.3      0.00       0.0       0.6                          
+    0:00:24   58773.3      0.00       0.0       0.6                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:24   58773.3      0.00       0.0       0.6                          
+    0:00:24   58946.9      0.00       0.0       0.5 FIFO_CMD/n534            
+    0:00:24   59144.0      0.00       0.0       0.4 FIFO_RETURN/n1051        
+    0:00:24   59290.0      0.00       0.0       0.3 FIFO_CMD/n535            
+    0:00:24   59368.8      0.00       0.0       0.3 FIFO_RETURN/n1068        
+    0:00:25   59443.9      0.00       0.0       0.3 FIFO_IN/n681             
+    0:00:25   59519.0      0.00       0.0       0.3 FIFO_CMD/n1295           
+    0:00:25   59594.1      0.00       0.0       0.3 FIFO_RETURN/n1574        
+    0:00:28   59643.3      0.00       0.0       0.3                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:28   59643.3      0.00       0.0       0.3                          
+    0:00:28   59643.3      0.00       0.0       0.3                          
+    0:00:29   58900.9      0.00       0.0       0.3                          
+    0:00:29   58570.5      0.00       0.0       0.3                          
+    0:00:30   58272.5      0.00       0.0       0.3                          
+    0:00:30   58140.2      0.00       0.0       0.3                          
+    0:00:30   58028.9      0.00       0.0       0.3                          
+    0:00:30   57917.7      0.00       0.0       0.3                          
+    0:00:30   57803.7      0.00       0.0       0.3                          
+    0:00:31   57696.7      0.00       0.0       0.3                          
+    0:00:31   57634.7      0.00       0.0       0.3                          
+    0:00:31   57616.4      0.00       0.0       0.3                          
+    0:00:31   57602.4      0.00       0.0       0.3                          
+    0:00:31   57588.3      0.00       0.0       0.3                          
+    0:00:31   57574.2      0.00       0.0       0.3                          
+    0:00:31   57561.5      0.00       0.0       0.3                          
+    0:00:32   57548.9      0.00       0.0       0.3                          
+    0:00:32   57539.0      0.00       0.0       0.3                          
+    0:00:32   57539.0      0.00       0.0       0.3                          
+    0:00:32   57539.0      0.00       0.0       0.3                          
+    0:00:32   57531.0      0.00       0.0       0.3                          
+    0:00:32   57531.0      0.00       0.0       0.3                          
+    0:00:32   57531.0      0.00       0.0       0.3                          
+    0:00:32   57531.0      0.00       0.0       0.3                          
+    0:00:32   57531.0      0.00       0.0       0.3                          
+    0:00:32   57531.0      0.00       0.0       0.3                          
+    0:00:32   57531.0      0.00       0.0       0.3                          
+Loading db file '/home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'ddr2_controller' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'XINIT/clk': 3062 load(s), 1 driver(s)
+Error: unknown option '-xg_force_db' (CMD-010)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Writing verilog file '/home/scf-31/kma567/EE577B/Project/DDR2/netlist/ddr2_controller.syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/scf-31/kma567/EE577B/Project/DDR2/sdf/ddr2_controller.sdf'. (WT-3)
+1
